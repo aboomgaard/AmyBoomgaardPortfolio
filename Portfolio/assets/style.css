@@ -1,12 +1,15 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Merienda";
+   
+}
+body {
+    background-color: white;
+
+
 }
 
-body {
-    
-    background-color: white;
-}
   
 .header {
     padding: 20px;
@@ -17,7 +20,7 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    font-family: "Lobster Two";
+    
 }
 
 aside {
@@ -48,6 +51,10 @@ nav {
     font-size: 1.4rem;
   }
 
+  .tabs {
+      text-align: right;
+  }
+
   main {
     display: flex;
     flex-wrap: wrap;
@@ -70,13 +77,24 @@ p {
     margin-left: 20px;
 }
 
+
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.stonk {
+    font-size: 5px;
+}
+
 .box1 {
-    columns: 1;
+    background-image: linear-gradient(rgba(151, 139, 218, 0.5), rgba(235, 207, 207, 0.5)), url(./images/sunset.jpg);
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: "Merienda";
-    background-color: rgb(203, 207, 250);
+    
     color: black;
 }
 
@@ -86,11 +104,12 @@ p {
     padding: 50px;
     height: 300px;
     font-family: "Merienda";
-   
+    background-color: rgb(203, 207, 250);
     color: black;
 }
 .box3 {
-    margin-bottom: 20px;
+    columns: 3;
+    margin-bottom: 50px;
     padding: 50px;
     height: 300px;
     font-family: "Merienda";
@@ -123,5 +142,8 @@ h2 {
 }
 
   @media screen and (max-width: 600px) {
-    nav.body;
+    .column {
+        width: 100%;
+        display: block;
+      }
   }
